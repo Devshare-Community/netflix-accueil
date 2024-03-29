@@ -7,6 +7,11 @@
 
 
     --default-padding: 1em;
+    --button-padding: 0.5em 1em;
+
+
+
+    --default-raduis: 10%;
 }
 
 *{
@@ -25,5 +30,10 @@
     padding: var(--default-padding);
 }
 
-
+.button--color-red{
+    padding: var(--button-padding);
+    color: var(--white-color);
+    background-color: var(--red-color);
+    border-radius: var(--default-raduis);
+}
 

@@ -8,9 +8,15 @@
 
     --default-padding: 1em;
     --button-padding: 0.5em 1em;
+    --aside-padding: 3em 1em;
+    --text-padding: 1em 0;
 
 
 
+    --title-fontSize: 1.3em;
+
+
+    
     --default-raduis: 10%;
 }
 
@@ -18,12 +24,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: inherit;
+    color: var(--white-color);
+    background-color: var(--black-color);
     list-style: none;
     text-decoration: none;
+    text-align: center;
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
 }
 
-.topbar {
+/* .banner{
+    background-image: url("./../netflix-accueil/assets/backgroung.jpeg");
+} */
+
+.banner__topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,4 +49,12 @@
     background-color: var(--red-color);
     border-radius: var(--default-raduis);
 }
+
+.banner-description{
+    padding: var(--aside-padding);
+    font-size: var(--title-fontSize);
+}
+
+
+
 

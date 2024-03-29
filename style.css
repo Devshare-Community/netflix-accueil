@@ -9,11 +9,12 @@
     --default-padding: 1em;
     --button-padding: 0.5em 1em;
     --aside-padding: 3em 1em;
-    --text-padding: 1em 0;
+    --text-padding: .5em 0;
 
 
 
-    --title-fontSize: 1.3em;
+    --title-fontSize: 2em;
+    --default-fontSize: 1em;
 
 
     
@@ -52,9 +53,16 @@
 
 .banner-description{
     padding: var(--aside-padding);
+}
+
+.banner__title{
+    padding: var(--text-padding);
     font-size: var(--title-fontSize);
 }
 
-
+.banner__text{
+    padding: var(--text-padding);
+    font-size: var(--default-fontSize);
+}
 
 

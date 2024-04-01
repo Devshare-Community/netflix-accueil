@@ -24,7 +24,7 @@
 
 
     
-    --default-raduis: 10%;
+    --default-raduis: 5px;
 }
 
 *{
@@ -37,18 +37,54 @@
     text-decoration: none;
     text-align: center;
     font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    border: none;
 }
 
 /* .banner{
     background-image: url("./../netflix-accueil/assets/backgroung.jpeg");
 } */
 
-.banner__topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--default-padding);
+
+.banner {
+    
+    .banner__topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--default-padding);
+    }
+
+    .banner-description{
+        padding: var(--aside-padding);
+    }
+
+    .banner__title{
+        padding: var(--text-padding);
+        font-size: var(--title-fontSize);
+    }
+    
+    .banner__text{
+        padding: var(--text-padding);
+        font-size: var(--default-fontSize);
+    }
+    
+    .banner-description__form{
+        padding: var(--default-padding);
+    
+        input{
+            width: 100%;
+            border: var(--white-color) 1px solid;
+            padding: var(--default-padding);
+        }
+    
+        button{
+            display: inline-block;
+            margin: var(--default-padding);
+        }
+    }
+
 }
+
 
 .button--color-red{
     padding: var(--button-padding);
@@ -56,34 +92,9 @@
     border-radius: var(--default-raduis);
 }
 
-.banner-description{
-    padding: var(--aside-padding);
-}
 
-.banner__title{
-    padding: var(--text-padding);
-    font-size: var(--title-fontSize);
-}
 
-.banner__text{
-    padding: var(--text-padding);
-    font-size: var(--default-fontSize);
-}
 
-.banner-description__form{
-    padding: var(--default-padding);
-
-    input{
-        width: 100%;
-        border: var(--white-color) 1px solid;
-        padding: var(--default-padding);
-    }
-
-    a{
-        display: inline-block;
-        margin: var(--default-padding);
-    }
-}
 
 
 

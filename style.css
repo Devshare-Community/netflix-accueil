@@ -14,7 +14,7 @@
 
     --default-padding: 1em;
     --button-padding: 0.5em 1em;
-    --aside-padding: 3em 1em;
+    --aside-padding: 2em 1em;
     --text-padding: .5em 0;
 
 
@@ -35,7 +35,6 @@
     background-color: var(--black-color);
     list-style: none;
     text-decoration: none;
-    text-align: center;
     font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
     border: none;
 }
@@ -47,6 +46,8 @@
 
 .banner {
     
+    text-align: center;
+
     .banner__topbar {
         display: flex;
         justify-content: space-between;
@@ -92,7 +93,17 @@
     border-radius: var(--default-raduis);
 }
 
+.content {
+    padding: var(--default-padding);
 
+    .content__article{
+        padding: var(--aside-padding);
+    }
+
+    .content__article__card{
+        background-color: #E50815;
+    }
+}
 
 
 

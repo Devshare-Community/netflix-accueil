@@ -6,7 +6,8 @@
 
 :root{
     --red-color: #E50815;
-    --white-color: #d2d2d2;
+    --white-color: #FFFFFF;
+    --white-degrade-color: #CABAC0;
     --black-color: #000;
     --card-color: #5F1C38;
 
@@ -19,8 +20,10 @@
 
 
 
-    --title-fontSize: 2em;
-    --default-fontSize: 1.1em;
+    --title-one-fontSize: 2.2em;
+    --title-two-fontSize: 1.4em;
+    --title-card-fontSize: 2.2em;
+    --default-fontSize: 1em;
 
 
     
@@ -100,11 +103,21 @@ html{
 .content {
     padding: var(--default-padding);
 
-    .content__article{
-        padding: var(--aside-padding);
+    .content__title{
+        font-size: var(--title-two-fontSize);
     }
 
-    .content__article--card{
+    .content__article{
+        padding: var(--aside-padding);
+        display: grid;
+        gap: 1em;
+
+        p{
+            color: var(--white-degrade-color);
+        }
+    }
+
+    .card--bg-pink{
         margin: var(--default-padding);
         border-radius: 15px;
         background-color: var(--card-color);

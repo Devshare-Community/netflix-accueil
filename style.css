@@ -6,9 +6,9 @@
 
 :root{
     --red-color: #E50815;
-    --white-color: #fff;
+    --white-color: #d2d2d2;
     --black-color: #000;
-    --card-color: #641D3C;
+    --card-color: #5F1C38;
 
 
 
@@ -32,7 +32,6 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--white-color);
-    background-color: var(--black-color);
     list-style: none;
     text-decoration: none;
     font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
@@ -42,7 +41,10 @@
 /* .banner{
     background-image: url("./../netflix-accueil/assets/backgroung.jpeg");
 } */
+html{
 
+    background-color: var(--black-color);
+}
 
 .banner {
     
@@ -74,8 +76,10 @@
     
         input{
             width: 100%;
+            border-radius: 5px;
             border: var(--white-color) 1px solid;
             padding: var(--default-padding);
+            background-color: var(--black-color);
         }
     
         button{
@@ -100,8 +104,10 @@
         padding: var(--aside-padding);
     }
 
-    .content__article__card{
-        background-color: #E50815;
+    .content__article--card{
+        margin: var(--default-padding);
+        border-radius: 15px;
+        background-color: var(--card-color);
     }
 }
 

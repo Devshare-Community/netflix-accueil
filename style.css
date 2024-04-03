@@ -9,7 +9,8 @@
     --white-color: #FFFFFF;
     --white-degrade-color: #CABAC0;
     --black-color: #000;
-    --card-color: #5F1C38;
+    --card-color-red: #5F1C38;
+    --card-color-blue: #1A1F40;
 
 
 
@@ -52,6 +53,9 @@ html{
 .banner {
     
     text-align: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+                  url("../../assets/backgroung.jpeg");
+    padding-bottom: 8em; */
 
     .banner__topbar {
         display: flex;
@@ -66,7 +70,8 @@ html{
 
     .banner__title{
         padding: var(--text-padding);
-        font-size: var(--title-fontSize);
+        font-size: var(--title-one-fontSize);
+        
     }
     
     .banner__text{
@@ -117,10 +122,16 @@ html{
         }
     }
 
-    .card--bg-pink{
+    .card--bg-red{
         margin: var(--default-padding);
         border-radius: 15px;
-        background-color: var(--card-color);
+        background-color: var(--card-color-red);
+    }
+
+    .card--bg-blue{
+        margin: var(--default-padding);
+        border-radius: 15px;
+        background-color: var(--card-color-blue);
     }
 }
 

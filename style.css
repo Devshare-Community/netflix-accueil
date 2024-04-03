@@ -9,8 +9,9 @@
     --white-color: #FFFFFF;
     --white-degrade-color: #CABAC0;
     --black-color: #000;
-    --card-color-red: #5F1C38;
-    --card-color-blue: #1A1F40;
+    --card-color-red: #861b48;
+    --card-color-blue: #232c68;
+    --card-color-gray: #2D2D2D;
 
 
 
@@ -125,13 +126,20 @@ html{
     .card--bg-red{
         margin: var(--default-padding);
         border-radius: 15px;
-        background-color: var(--card-color-red);
+        background: linear-gradient(var(--card-color-red),
+         rgba(59, 10, 30, 0.6));
     }
 
     .card--bg-blue{
         margin: var(--default-padding);
         border-radius: 15px;
-        background-color: var(--card-color-blue);
+        background: linear-gradient(var(--card-color-blue),
+         rgba(12, 21, 73, 0.6));
+    }
+
+    .card--bg-gray{
+        margin: var(--default-padding);
+        background: var(--card-color-gray)
     }
 }
 
